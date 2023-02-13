@@ -1,12 +1,12 @@
 package Newspaper
-
-import java.sql.Date
-
-open class Newspaper (_name: String) {
-    val name = _name
+open class Newspaper () {
+    var name = "Undefined"
     var number: UInt = 0u
     var rdate = "01/01/200"
 
+    constructor(_name: String): this(){
+        name = _name
+    }
     constructor(_name: String, _number: UInt) : this(_name) {
         number = _number
     }
