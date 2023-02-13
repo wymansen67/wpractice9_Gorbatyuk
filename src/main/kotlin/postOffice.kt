@@ -1,14 +1,14 @@
 import Newspaper.*
 
 class postOffice() : Newspaper() {
-    var length: Int = 0
+    var length: UInt = 0u
     var cost: Double = 0.0
 
-    constructor(_length: Int) : this() {
+    constructor(_length: UInt) : this() {
         length = _length
     }
 
-    constructor(_length: Int, _cost: Double) : this(_length) {
+    constructor(_length: UInt, _cost: Double) : this(_length) {
         cost = _cost
     }
 
