@@ -1,5 +1,5 @@
 import Exams.*
-class educationalinstitution () : Exams() {
+class school () : Exams() {
     var student = "Undefined"
 
     constructor(_student: String): this(){
