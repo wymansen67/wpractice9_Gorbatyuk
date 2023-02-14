@@ -12,11 +12,17 @@ fun main () {
 
     println("Введите название выпуска, номер, дату (01/01/2000), длину выпуска, цену")
     var AnnaTimes: Newspaper = Newspaper(readln(), readln().toUInt(), readln())
-    var AnnaTimesPost: postOffice = postOffice(readln().toInt(), readln().toDouble())
+    var AnnaTimesPost: postOfficeCity = postOfficeCity(readln().toUInt(), readln().toDouble())
     AnnaTimes.getNewspaper()
     AnnaTimes.getNewspaperDate()
     AnnaTimes.getLatestNewspaper()
     AnnaTimesPost.getNewspaperCost()
     AnnaTimesPost.getNewspaperInfo()
+    var AnnaTimesPostVllg: postOfficeVillage = postOfficeVillage(readln().toUInt(), readln().toDouble())
+    AnnaTimes.getNewspaper()
+    AnnaTimes.getNewspaperDate()
+    AnnaTimes.getLatestNewspaper()
+    AnnaTimesPostVllg.getNewspaperCost()
+    AnnaTimesPostVllg.getNewspaperInfo()
 
 }
