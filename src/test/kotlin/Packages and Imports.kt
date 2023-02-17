@@ -1,16 +1,7 @@
-import Exams.*
 import Newspaper.*
-import educationalinstitution.*
 
 fun main() {
-    /*
-    println("Введите имя (код) студента, Предмет экзамена (код), Оценку, Дату (01/01/2000)")
-    var student: Exams = Exams(readln(), readln(), readln().toUByte())
-    var studentname: educationalinstitution = educationalinstitution(readln())
-    studentname.getExamMark()
-    student.getExamInfo()
-    studentname.getStudentExam()
-    */
+
     println("Введите тип (укажите номер)\n1.Городская\n2.Поселковая")
     var temp = readln()
     if (temp == "1") {
